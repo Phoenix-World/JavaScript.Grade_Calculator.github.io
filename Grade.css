@@ -1,0 +1,63 @@
+
+*,*:before,*:after{box-sizing: border-box; -wedkit-font-smoothing:antialiased;
+				   -moz-osx-font-smoothing:grayscale;}
+
+body{background:#e68a00;font-size: 12px;}
+
+body,button,input{font-family: "Righteous",cursive; 
+				  font-weight: 700; letter-spacing: 1.4px;}
+
+.background{display: flex;max-height: 100vh;}
+
+.container{flex: 0 1 700px; margin: auto; padding: 10px;}
+
+.screen{position: relative;background:#4d2600; border-radius: 15px; transform: translateY(30%);}
+
+.scree:after{content: "";display: block;position: absolute;top: 0;left: 20px;
+			 right: 20px; bottom: 0;border-radius: 15px;
+			 box-shadow: 0 20px 40px rgba(0,0,0,.4);z-index: -1;}
+
+.screen_body{display: flex;}
+
+.screen_body_item{flex:1;padding: 50px;}
+
+.screen_body_item.left{display:flex;flex-direction: column; justify-content: center;align-items: center;}
+
+.app_title{display: flex;justify-content: center;align-items: center;
+			color: #e68a00; font-size: 26px; text-transform: uppercase;
+			border-left: 4px solid #e68a00; padding: 10px;}
+
+.animated_infinite_pulse{-webkit-animation:mover 2s infinite alternate;
+						animation: mover 1s infinite alternate;}
+
+
+@-webkit-keyframes mover{0%{transform: translateY(0);}
+						100%{transform: translateY(-20px);}
+						}
+
+@keyframes mover{0%{transform: translateY(0);}
+				100%{transform: translateY(-20px);}
+				} 
+
+.app_form_group{margin-bottom: 15px;}
+
+.app_form_group:button{margin-bottom: 0;text-align: right;}
+
+.app_form_control{width: 100%;padding: 10px 0; background:none;
+				  border:none;border-bottom: 1px solid #666; color: #ddd;
+				  font-size: 14px;text-transform: uppercase;outline: none;
+				  border-color: .2s;}
+
+.app_form_control::placeholder{color: #a6a6a6;}
+
+.app_form_control:focus{border-bottom-color:#fff;}
+
+.app_form_button{background:none;border:none;color: #e68a00;font-size: 14px;
+			     cursor: pointer;outline: none;text-transform: uppercase;}
+.app_form_button:hover{color: #ffcc00;}
+
+/*.app_form_group*/ .showdata{text-align:center; color:#fff; font-size: 1.2rem;padding-top:-10px;
+		 padding-bottom: 10px; }
+
+
+
